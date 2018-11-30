@@ -1,0 +1,8 @@
+﻿Project_Name,Project_Description,Project_img,Hosted,Github_Repository,Rank
+Belly Button Biodiversity Dashboard,"Dashboard visualization page for belly button biodiversity dataset. REST system built in Flask, querying from a sqllite database. Visualizations are built using Plotly.js. Application is deployed on Heroku servers.",https://placeimg.com/100/100/any,https://belly-button-ep.herokuapp.com/,https://github.com/epapineau/belly-button-biodiversity,
+Yelp Roulette,Website to randomly select a restaurant on Yelp for the decision impaired! Webpage utizlizes the geolocation and Yelp APIs to choose a nearby restaurant and display the results. Application is deployed on Heroku servers.,https://placeimg.com/100/100/any,https://roulette-yelp.herokuapp.com/,https://github.com/epapineau/yelp-roulette,
+UFO Sightings,Database filter and display page. Website deployed on gitpages,https://placeimg.com/100/100/any,https://epapineau.github.io/ufo-tracker/,https://github.com/epapineau/ufo-tracker,
+Mars Scraper,Scrape live data about Mars from various internet sources ,https://placeimg.com/100/100/any,NA,https://github.com/epapineau/mission-to-mars,
+Weather Py,Analysis presentation of Weather data,https://placeimg.com/100/100/any,NA,https://github.com/epapineau/climate-queries-with-api,
+D3 Times Visualization,Visualization,https://placeimg.com/100/100/any,NA,https://github.com/epapineau/census-visualization,
+Berkeley Coding Boot Camp Code Drills,"Weekly content drills from Berkeley Data Analytics Coding Bootcamp, 2108.",https://placeimg.com/100/100/any,NA,https://github.com/epapineau/code-drills,
