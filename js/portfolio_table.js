@@ -16,16 +16,19 @@ d3.csv("/data/projects.csv", function(error, projects){
 
             // Links, if available
             if (project.Hosted === "NA"){
-                var site = "<td>Unhosted</td>";
+                var symbol = '<i class="fas fa-check-circle fa-lg" style="color:Green"></i>';
+                var site = "<td ><center>Unhosted<center></td>";
             }
             else{
-                var site = `<td><a href = "${project.Hosted}" target = "_blank">X</a></td>`;
+                var site = `<td class="align-middle"><center><a href = "${project.Hosted}" target = "_blank">X</a><center></td>`;
             }
             if (project.Github_Repository === "NA"){
-                var git = "Private Repo";
+                var symbol = '<i class="fas fa-file-code fa-lg" style="color:lightgrey"></i>';
+                var git = `<td class="align-middle"><center>${symbol}<center></td>`;
             }
             else {
-                var git = `<td><a href = "${project.Github_Repository}" target = "_blank">X</a></td>`;
+                var symbol = '<i class="fas fa-file-code fa-lg"></i>';
+                var git = `<td class="align-middle"><center><a href = "${project.Github_Repository}" target = "_blank">${symbol}</a><center></td>`;
             }
             
             var htmlRow = `${img} ${proj} ${desc} ${site} ${git}`;
