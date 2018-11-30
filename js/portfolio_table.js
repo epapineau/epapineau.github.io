@@ -10,17 +10,18 @@ d3.csv("/data/projects.csv", function(error, projects){
         .enter()
         .append("tr")
         .html(function(project){
-            var proj = `<td>${project.Project_Name}</td>`;
-            var img = `<td><img src = "${project.Project_img}" alt = "${proj} Preview">`;
-            var desc = `<td>${project.Project_Description}</td>`
+            var img = `<td class="align-middle"><img src = "${project.Project_img}" alt = "${project.Project_Name} Preview">`;
+            var proj = `<td class="align-middle">${project.Project_Name}</td>`;
+            var desc = `<td class="align-middle">${project.Project_Description}</td>`
 
             // Links, if available
             if (project.Hosted === "NA"){
-                var symbol = '<i class="fas fa-check-circle fa-lg" style="color:Green"></i>';
-                var site = "<td ><center>Unhosted<center></td>";
+                var symbol = '<i class="fas fa-desktop fa-lg" style="color:lightgrey"></i>';
+                var site = `<td class="align-middle"><center>${symbol}</td>`;
             }
             else{
-                var site = `<td class="align-middle"><center><a href = "${project.Hosted}" target = "_blank">X</a><center></td>`;
+                var symbol = '<i class="fas fa-desktop fa-lg"></i>';
+                var site = `<td class="align-middle"><center><a href = "${project.Hosted}" target = "_blank">${symbol}</a><center></td>`;
             }
             if (project.Github_Repository === "NA"){
                 var symbol = '<i class="fas fa-file-code fa-lg" style="color:lightgrey"></i>';
