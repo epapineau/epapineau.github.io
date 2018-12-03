@@ -3,6 +3,11 @@
     height: auto;
 }
 
+.icon img {
+    width: 100px;
+    height: 100px;
+}
+
 .zola img {
     width: 100%;
     height: auto;

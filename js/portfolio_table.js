@@ -9,6 +9,7 @@ d3.csv("/data/projects.csv", function(error, projects){
         .data(projects)
         .enter()
         .append("tr")
+        .classed("icon", true)
         .html(function(project){
             var img = `<td class="align-middle"><img src = "${project.Project_img}" alt = "${project.Project_Name} Preview">`;
             var proj = `<td class="align-middle">${project.Project_Name}</td>`;
